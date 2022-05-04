@@ -38,6 +38,18 @@
   word-break: break-word;
 }
 
+.task p:focus {
+  outline: none;
+}
+
+.task p[contenteditable] {
+  border-bottom: 1px solid var(--input-border-active-color);
+}
+
+.task p[contenteditable]:hover {
+  cursor: text;
+}
+
 .task::after {
   position: absolute;
   top: 0;
@@ -130,7 +142,7 @@
   display: none;
 }
 
-.task__input {
+.task--input {
   display: none;
   height: 24px;
   width: 100%;
@@ -141,20 +153,20 @@
   transition: var(--animation);
 }
 
-.task__input:focus,
-.task__input:active {
+.task--input:focus,
+.task--input:active {
   outline: none;
-  border-color: var(--input-border-active-color);
+  border-color: var(--input-border-active-color)
 }
 
-.task__view {
+.task--view {
   padding: 2px 0;
 }
 
-.task--active .task__view {
+.task--active .task--view {
   display: none;
 }
 
-.task--active .task__input {
+.task--active .task--input {
   display: block;
 }

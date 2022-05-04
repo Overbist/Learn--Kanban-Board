@@ -1,4 +1,5 @@
 :root {
+
   --main-font: "Muller", "Helvetica", sans-serif;
 
   --main-blue: #2f80ed;
@@ -22,5 +23,5 @@
   --inactive-color: #d0d0d0;
 
   --animation: 0.155s ease-in-out;
-}
 
+}
